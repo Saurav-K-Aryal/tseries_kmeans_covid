@@ -26,7 +26,7 @@ csv_file_path = sys.argv[1]
 N_ROWS = 10000000
 # check if read_csv fails..
 try:
-	df = pd.read_csv(csv_file_path, dtype=dtyps, usecols=columns)
+	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=columns)
 	print(df.columns)
 	# print(df[['smoking_prevalence','diabetes_prevalence','stay_at_home_requirements','international_travel_controls','testing_policy']].head())
 except:
