@@ -1,0 +1,156 @@
+Running file data_cleaning_pandas.py
+Using csv at ./aggregated.csv
+-----------------
+4 246
+cancel_public_events is of type object
+-----------------
+4 246
+contact_tracing is of type object
+-----------------
+295110 246
+-----------------
+43500 246
+-----------------
+4 246
+debt_relief is of type object
+-----------------
+576 246
+-----------------
+6 246
+facial_coverings is of type object
+-----------------
+979 246
+-----------------
+320 246
+-----------------
+373 246
+-----------------
+4 246
+income_support is of type object
+-----------------
+131 246
+-----------------
+6 246
+international_travel_controls is of type object
+-----------------
+160 246
+-----------------
+22138 246
+-----------------
+1873 246
+-----------------
+15032 246
+-----------------
+9200 246
+-----------------
+9499 246
+-----------------
+9072 246
+-----------------
+8768 246
+-----------------
+8393 246
+-----------------
+8040 246
+-----------------
+7336 246
+-----------------
+6255 246
+-----------------
+5137 246
+-----------------
+13033 246
+-----------------
+13057 246
+-----------------
+205 246
+-----------------
+214 246
+-----------------
+4 246
+public_information_campaigns is of type object
+-----------------
+4 246
+public_transport_closing is of type object
+-----------------
+6 246
+restrictions_on_gatherings is of type object
+-----------------
+4 246
+restrictions_on_internal_movement is of type object
+-----------------
+5 246
+school_closing is of type object
+-----------------
+5 246
+stay_at_home_requirements is of type object
+-----------------
+670 246
+-----------------
+1421 246
+-----------------
+18875 246
+-----------------
+5 246
+testing_policy is of type object
+-----------------
+7 246
+vaccination_policy is of type object
+-----------------
+5 246
+workplace_closing is of type object
+{'age_bin_0': 'object',
+ 'age_bin_1': 'object',
+ 'age_bin_2': 'object',
+ 'age_bin_3': 'object',
+ 'age_bin_4': 'object',
+ 'age_bin_5': 'object',
+ 'age_bin_6': 'object',
+ 'age_bin_7': 'object',
+ 'age_bin_8': 'object',
+ 'age_bin_9': 'object',
+ 'cancel_public_events': 'object',
+ 'contact_tracing': 'object',
+ 'country_name': 'object',
+ 'cumulative_confirmed': dtype('float64'),
+ 'cumulative_deceased': dtype('float64'),
+ 'debt_relief': 'object',
+ 'emergency_investment_in_healthcare': dtype('float64'),
+ 'facial_coverings': 'object',
+ 'fiscal_measures': dtype('float64'),
+ 'gdp_per_capita_usd': dtype('float64'),
+ 'gdp_usd': dtype('float64'),
+ 'income_support': 'object',
+ 'international_support': dtype('float64'),
+ 'international_travel_controls': 'object',
+ 'investment_in_vaccines': dtype('float64'),
+ 'iso_3166_1_alpha_3': 'object',
+ 'new_confirmed': dtype('float64'),
+ 'new_deceased': dtype('float64'),
+ 'openstreetmap_id': dtype('float64'),
+ 'population_age_00_09': dtype('float64'),
+ 'population_age_10_19': dtype('float64'),
+ 'population_age_20_29': dtype('float64'),
+ 'population_age_30_39': dtype('float64'),
+ 'population_age_40_49': dtype('float64'),
+ 'population_age_50_59': dtype('float64'),
+ 'population_age_60_69': dtype('float64'),
+ 'population_age_70_79': dtype('float64'),
+ 'population_age_80_and_older': dtype('float64'),
+ 'population_female': dtype('float64'),
+ 'population_male': dtype('float64'),
+ 'population_rural': dtype('float64'),
+ 'population_urban': dtype('float64'),
+ 'public_information_campaigns': 'object',
+ 'public_transport_closing': 'object',
+ 'restrictions_on_gatherings': 'object',
+ 'restrictions_on_internal_movement': 'object',
+ 'school_closing': 'object',
+ 'stay_at_home_requirements': 'object',
+ 'subregion1_code': dtype('O'),
+ 'subregion1_name': dtype('O'),
+ 'subregion2_name': dtype('O'),
+ 'testing_policy': 'object',
+ 'vaccination_policy': 'object',
+ 'workplace_closing': 'object'}
+{'country_name': 'object', 'iso_3166_1_alpha_3': 'object', 'age_bin_0': 'object', 'age_bin_1': 'object', 'age_bin_2': 'object', 'age_bin_3': 'object', 'age_bin_4': 'object', 'age_bin_5': 'object', 'age_bin_6': 'object', 'age_bin_7': 'object', 'age_bin_8': 'object', 'age_bin_9': 'object', 'cancel_public_events': 'object', 'contact_tracing': 'object', 'cumulative_confirmed': dtype('float64'), 'cumulative_deceased': dtype('float64'), 'debt_relief': 'object', 'emergency_investment_in_healthcare': dtype('float64'), 'facial_coverings': 'object', 'fiscal_measures': dtype('float64'), 'gdp_per_capita_usd': dtype('float64'), 'gdp_usd': dtype('float64'), 'income_support': 'object', 'international_support': dtype('float64'), 'international_travel_controls': 'object', 'investment_in_vaccines': dtype('float64'), 'new_confirmed': dtype('float64'), 'new_deceased': dtype('float64'), 'openstreetmap_id': dtype('float64'), 'population_age_00_09': dtype('float64'), 'population_age_10_19': dtype('float64'), 'population_age_20_29': dtype('float64'), 'population_age_30_39': dtype('float64'), 'population_age_40_49': dtype('float64'), 'population_age_50_59': dtype('float64'), 'population_age_60_69': dtype('float64'), 'population_age_70_79': dtype('float64'), 'population_age_80_and_older': dtype('float64'), 'population_female': dtype('float64'), 'population_male': dtype('float64'), 'population_rural': dtype('float64'), 'population_urban': dtype('float64'), 'public_information_campaigns': 'object', 'public_transport_closing': 'object', 'restrictions_on_gatherings': 'object', 'restrictions_on_internal_movement': 'object', 'school_closing': 'object', 'stay_at_home_requirements': 'object', 'subregion1_code': dtype('O'), 'subregion1_name': dtype('O'), 'subregion2_name': dtype('O'), 'testing_policy': 'object', 'vaccination_policy': 'object', 'workplace_closing': 'object'}

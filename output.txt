@@ -1,0 +1,23 @@
+Running file data_cleaning_pandas.py
+Using csv at ./aggregated.csv
+14 246
+age_bin_0 is of type object
+25 246
+age_bin_1 is of type object
+22 246
+age_bin_2 is of type object
+21 246
+age_bin_3 is of type object
+17 246
+age_bin_4 is of type object
+15 246
+age_bin_5 is of type object
+13 246
+age_bin_6 is of type object
+12 246
+age_bin_7 is of type object
+10 246
+age_bin_8 is of type object
+10 246
+age_bin_9 is of type object
+5894 18301511
