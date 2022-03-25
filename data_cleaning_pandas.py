@@ -31,7 +31,7 @@ csv_file_path = sys.argv[1]
 # numeric_cols.extend(['country_name', 'iso_3166_1_alpha_3'])
 # object_cols.extend(['country_name', 'iso_3166_1_alpha_3'])
 try:
-	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=numeric_cols)
+	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=columns)
 	print(df.columns)
 	# print(df[['smoking_prevalence','diabetes_prevalence','stay_at_home_requirements','international_travel_controls','testing_policy']].head())
 except:
