@@ -15,7 +15,7 @@ from pprint import pprint
 
 # needs only .py file and .csv file
 if len(sys.argv) != 2:
-	print('CSV filename not supplied')
+	print('CSV filename not supplied or extra params given.')
 	sys.exit(1) # terminate execution
 
 print('Running file', sys.argv[0])
@@ -26,10 +26,6 @@ csv_file_path = sys.argv[1]
 # N_ROWS = 10000000
 
 # check if read_csv fails..
-# numeric_cols = [col for col in columns if dtypes[col] != 'object']
-# object_cols = [col for col in column if col not in numeric_cols]
-# numeric_cols.extend(['country_name', 'iso_3166_1_alpha_3'])
-# object_cols.extend(['country_name', 'iso_3166_1_alpha_3'])
 try:
 	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=columns)
 	print(df.columns)
@@ -46,4 +42,8 @@ print(df.head())
 agg_dict = dict((k,'mean') if dtypes[k] != 'object' else (k, lambda x: x.mode()) for k in dtypes)
 del agg_dict['country_name']
 del agg_dict['iso_3166_1_alpha_3']
-print(agg_dic)
+print(agg_dict)
+
+# group_by
+grouped_df = df.group_by(['country_name', 'iso_3166_1_alpha_3']).agg(agg_dict)
+group_by.to_csv('grouped_mean_modes.csv')
