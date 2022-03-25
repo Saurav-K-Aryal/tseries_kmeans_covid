@@ -45,7 +45,8 @@ print(df.head())
 # take mean on numeric columns and mode on object columns
 # create dict like in example here
 # https://stackoverflow.com/questions/48225508/pandas-get-the-average-and-mode-group-by-specified-columns
-agg_dict = dict((k,'mean') if dtypes[k] != 'object' else (k, lambda x: x.mode()) for k in dtypes)
+# https://stackoverflow.com/questions/15222754/groupby-pandas-dataframe-and-select-most-common-value
+agg_dict = dict((k,'mean') if dtypes[k] != 'object' else (k, lambda x: pd.Series.mode(x, dropna=False)[0]) for k in dtypes)
 del agg_dict['country_name']
 del agg_dict['iso_3166_1_alpha_3']
 print(agg_dict)
