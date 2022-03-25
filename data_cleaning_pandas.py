@@ -25,8 +25,10 @@ csv_file_path = sys.argv[1]
 # for debug only
 N_ROWS = 10000000
 # check if read_csv fails..
+cols = [col for col in columns if dtypes[col] != 'object']
+cols.extend(['country_name', 'iso_3166_1_alpha_3'])
 try:
-	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=columns)
+	df = pd.read_csv(csv_file_path, dtype=dtypes, usecols=cols)
 	print(df.columns)
 	# print(df[['smoking_prevalence','diabetes_prevalence','stay_at_home_requirements','international_travel_controls','testing_policy']].head())
 except:
