@@ -34,7 +34,7 @@ inferred_dtypes = {'country_name': 'object', 'iso_3166_1_alpha_3': 'object', 'ag
        'age_bin_8': 'object',
        'age_bin_9': 'object'}
 
-s = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/aggregated.csv', usecols=['country_name'])
+s = pd.read_csv(csv_file_path, usecols=['country_name'])
 n_countries = s['country_name'].nunique(dropna=False)
 # run diagnostics on each column for inferring dtype
 

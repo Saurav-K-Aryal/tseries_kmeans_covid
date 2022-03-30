@@ -1,6 +1,5 @@
 # data cleaning with pandas
 import pandas as pd
-
 # same dtypes to second file
 from constants import dtypes, columns
 
