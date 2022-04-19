@@ -174,7 +174,7 @@ X_scaler = scaler.fit_transform(x_comp)
 # Select the model and its parameters
 LDA = lda(
     solver='eigen', #{‘svd’, ‘lsqr’, ‘eigen’}, default=’svd’
-    n_components=2, #int, default=None
+    n_components=3, #int, default=None
     #shrinkage=None, #‘auto’ or float, default=None
     #priors=None, #array-like of shape (n_classes,), default=None, The class prior probabilities. By default, the class proportions are inferred from the training data.
     #store_covariance=False, #bool, default=False, If True, explicitely compute the weighted within-class covariance matrix when solver is ‘svd’. 
@@ -182,10 +182,30 @@ LDA = lda(
 )
 
 # Fit transform the data
-X_trans_lda=LDA.fit_transform(X_scaler,y_comp)
+X_trans_lda=LDA.fit_transform(X,y)
+
 
 # Print the results
 print('*************** LDA Summary ***************')
 print('Classes: ', LDA.classes_)
 print('Priors: ', LDA.priors_)
 print('Explained variance ratio: ', LDA.explained_variance_ratio_)
+
+
+## plot 3d scatter plot
+sns.set(style = "darkgrid")
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection = '3d')
+
+a = X_trans_lda[:,0]
+b = X_trans_lda[:,1]
+c = X_trans_lda[:,2]
+
+ax.set_xlabel("lda1")
+ax.set_ylabel("lda2")
+ax.set_zlabel("lda3")
+
+ax.scatter(a, b, c, c=y)
+
+plt.show()
