@@ -10,6 +10,10 @@ from sklearn.cluster import KMeans
 from tslearn.utils import to_time_series_dataset
 from tslearn.clustering import KShape, TimeSeriesKMeans, KernelKMeans, silhouette_score
 from yellowbrick.cluster import KElbowVisualizer
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+import statsmodels.stats.multicomp as mc
+import scipy.stats as stats`
 # from sklearn.metrics import silhouette_score
 # import sys
 # sys.setrecursionlimit(2000000)
@@ -41,15 +45,44 @@ def plot_world_map(k, deaths_df):
 	ax.set_axis_off()
 	plt.tight_layout()
 	plt.show()
-
-
+	
+	world['labels'] = world['labels'].fillna('missing')
+	world['labels'] = [str(num) for num in world['labels']]
 	# GPD per cap
 	world['gdp_per_cap'] = world['gdp_md_est'] / world['pop_est']
 	world['gdp_per_cap']= 10**6 * world['gdp_per_cap']
-	world['labels'] = world['labels'].fillna('missing')
-	world['labels'] = [str(num) for num in world['labels']]
-	world
+
+	print('ANOVA GDP per cap')
+	model = ols('gdp_per_cap ~ C(labels)', data=world).fit()
+	aov_table = sm.stats.anova_lm(model, typ=2)
+	print(aov_table)
+	comp = mc.MultiComparison(world['gdp_per_cap'], world['labels'])
+	tbl, a1, a2 = comp.allpairtest(stats.ttest_ind, method= "bonf")
+
+	print(tbl)
+
+	print('\n\nANOVA GDP')
+	model = ols('gdp_md_est ~ C(labels)', data=world).fit()
+	aov_table = sm.stats.anova_lm(model, typ=2)
+	print(aov_table)
+	comp = mc.MultiComparison(world['gdp_md_est'], world['labels'])
+	tbl, a1, a2 = comp.allpairtest(stats.ttest_ind, method= "bonf")
+	print(tbl)
+
+	print('\n\nANOVA pop')
+	model = ols('pop_est ~ C(labels)', data=world).fit()
+	aov_table = sm.stats.anova_lm(model, typ=2)
+	print(aov_table)
+	comp = mc.MultiComparison(world['pop_est'], world['labels'])
+	tbl, a1, a2 = comp.allpairtest(stats.ttest_ind, method= "bonf")
+	print(tbl)
+
+	# world
 	world.boxplot(column=['gdp_per_cap'], by='labels')
+	plt.show()
+	world.boxplot(column=['gdp_md_est'], by='labels')
+	plt.show()
+	world.boxplot(column=['pop_est'], by='labels')
 	plt.show()
 
 	grouped_df = world.groupby('labels')
@@ -87,8 +120,8 @@ def choose_elbow_optimal_k(df, show_plot=True, is_verbose=True):
 	visualizer = KElbowVisualizer(model, k=(2,MAX_CLUSTERS), metric='distortion', show=show_plot)
 
 	visualizer.fit(vals_df)		# Fit the data to the visualizer
-	# if show_plot:
-	# 	visualizer.show()		# Finalize and render the figure
+	if show_plot:
+		visualizer.show()		# Finalize and render the figure
 	# else:
 	# 	visualizer.close()
 
@@ -106,14 +139,16 @@ def run_experiment(deaths_df, num_trails=5, num_repeats=10):
 	count_map = dict()
 	prev_common_k = 0
 
+	show_plot = True
 	for j in range(num_trails):
 		print('TRIAL#', j)
-		model, k = choose_elbow_optimal_k(deaths_df, show_plot=False, is_verbose=False)
+		model, k = choose_elbow_optimal_k(deaths_df, show_plot=show_plot, is_verbose=False)
 		if k in count_map:
 			count_map[k] += 1
 		else:
 			count_map[k] = 1
 		print(count_map)
+		show_plot = False
 	# if prev_common_k == 0:		
 	# 	prev_common_k = max(count_map.items(), key=lambda x:x[1])
 	# 	continue
@@ -140,7 +175,7 @@ def finalize(deaths_df):
 
 	plt.show()
 
-	model, k = run_experiment(deaths_df, num_trails=10)
+	model, k = run_experiment(deaths_df, num_trails=1)
 	# model, k = choose_optimal_model(deaths_df)
 	vals_df = deaths_df[[col for col in deaths_df.columns if 't' == col[0]]]
 	print(vals_df, "HERE!!!")
@@ -164,15 +199,19 @@ def finalize(deaths_df):
 # cases_df.to_csv('cases_out.csv')
 
 ### cases
-# deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+print('For cases per capita')
+deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
 deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-print("LOL", deaths_df.isnull().values.any())
+# print("LOL", deaths_df.isnull().values.any())
 deaths_df = deaths_df[deaths_df['t0'].notna()] # remvoe any NAs
 
-# plt.show()
+plt.show()
 finalize(deaths_df)
 
 # deaths
+print('For deaths per capita')
 deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-print("LOL", deaths_df.isnull().values.any())
+# print("LOL", deaths_df.isnull().values.any())
 deaths_df = deaths_df[deaths_df['t0'].notna()]
+plt.show()
+finalize(deaths_df)
