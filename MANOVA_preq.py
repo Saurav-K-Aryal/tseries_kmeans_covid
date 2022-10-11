@@ -69,12 +69,13 @@ for l in cols:
     trt5 = grouped.query('labels == 5')[l].dropna()
     trt6 = grouped.query('labels == 6')[l].dropna()
 
-
+    print(len(trt0), len(trt1), len(trt2), len(trt3), len(trt4), len(trt5), len(trt6))
     # Bartlett's test in Python with SciPy:
     stat, p = bartlett(trt0, trt1, trt2, trt3, trt4, trt5, trt6)
 
     # Get the results:
-    print(stat, p)
+    print(l, stat, p)
+    print('-----------')
 
 
 print("\n" + "####################################################################" + "\n")
