@@ -13,7 +13,7 @@ from yellowbrick.cluster import KElbowVisualizer
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 import statsmodels.stats.multicomp as mc
-import scipy.stats as stats`
+import scipy.stats as stats 
 # from sklearn.metrics import silhouette_score
 # import sys
 # sys.setrecursionlimit(2000000)

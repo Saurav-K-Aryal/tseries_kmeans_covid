@@ -1,0 +1,250 @@
+                          MNLogit Regression Results                          
+==============================================================================
+Dep. Variable:                 labels   No. Observations:                  140
+Model:                        MNLogit   Df Residuals:                       44
+Method:                           MLE   Df Model:                           90
+Date:                Sun, 23 Oct 2022   Pseudo R-squ.:                     nan
+Time:                        02:57:34   Log-Likelihood:                    nan
+converged:                       True   LL-Null:                       -269.77
+Covariance Type:            nonrobust   LLR p-value:                       nan
+=================================================================================================================
+                                     labels=1       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+-----------------------------------------------------------------------------------------------------------------
+                                     labels=2       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+-----------------------------------------------------------------------------------------------------------------
+                                     labels=3       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+-----------------------------------------------------------------------------------------------------------------
+                                     labels=4       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+-----------------------------------------------------------------------------------------------------------------
+                                     labels=5       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+-----------------------------------------------------------------------------------------------------------------
+                                     labels=6       coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                                nan        nan        nan        nan         nan         nan
+average_temperature_celsius                          nan        nan        nan        nan         nan         nan
+comorbidity_mortality_rate                           nan        nan        nan        nan         nan         nan
+average_new_fully_vaccinated_per_day_per_1000        nan        nan        nan        nan         nan         nan
+average_new_vaccinated_per_day_per_1000              nan        nan        nan        nan         nan         nan
+average_new_tested_per_day_per_1000                  nan        nan        nan        nan         nan         nan
+diabetes_prevalence                                  nan        nan        nan        nan         nan         nan
+gdp_per_capita_usd                                   nan        nan        nan        nan         nan         nan
+gdp_usd                                              nan        nan        nan        nan         nan         nan
+human_capital_index                                  nan        nan        nan        nan         nan         nan
+latitude                                             nan        nan        nan        nan         nan         nan
+population_density                                   nan        nan        nan        nan         nan         nan
+smoking_prevalence                                   nan        nan        nan        nan         nan         nan
+total_cases_divided_by_population                    nan        nan        nan        nan         nan         nan
+total_deaths_divided_by_population                   nan        nan        nan        nan         nan         nan
+population                                           nan        nan        nan        nan         nan         nan
+=================================================================================================================
+                                  Results: MNLogit
+====================================================================================
+Model:                      MNLogit                 Pseudo R-squared:        nan    
+Dependent Variable:         labels                  AIC:                     nan    
+Date:                       2022-10-23 02:57        BIC:                     nan    
+No. Observations:           140                     Log-Likelihood:          nan    
+Df Model:                   90                      LL-Null:                 -269.77
+Df Residuals:               44                      LLR p-value:             nan    
+Converged:                  1.0000                  Scale:                   1.0000 
+No. Iterations:             6.0000                                                  
+------------------------------------------------------------------------------------
+                  labels = 0                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+------------------------------------------------------------------------------------
+                  labels = 1                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+------------------------------------------------------------------------------------
+                  labels = 2                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+------------------------------------------------------------------------------------
+                  labels = 3                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+------------------------------------------------------------------------------------
+                  labels = 4                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+------------------------------------------------------------------------------------
+                  labels = 5                  Coef. Std.Err.  t  P>|t| [0.025 0.975]
+------------------------------------------------------------------------------------
+                                        const   nan      nan nan   nan    nan    nan
+                  average_temperature_celsius   nan      nan nan   nan    nan    nan
+                   comorbidity_mortality_rate   nan      nan nan   nan    nan    nan
+average_new_fully_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+      average_new_vaccinated_per_day_per_1000   nan      nan nan   nan    nan    nan
+          average_new_tested_per_day_per_1000   nan      nan nan   nan    nan    nan
+                          diabetes_prevalence   nan      nan nan   nan    nan    nan
+                           gdp_per_capita_usd   nan      nan nan   nan    nan    nan
+                                      gdp_usd   nan      nan nan   nan    nan    nan
+                          human_capital_index   nan      nan nan   nan    nan    nan
+                                     latitude   nan      nan nan   nan    nan    nan
+                           population_density   nan      nan nan   nan    nan    nan
+                           smoking_prevalence   nan      nan nan   nan    nan    nan
+            total_cases_divided_by_population   nan      nan nan   nan    nan    nan
+           total_deaths_divided_by_population   nan      nan nan   nan    nan    nan
+                                   population   nan      nan nan   nan    nan    nan
+====================================================================================
+
