@@ -3,8 +3,8 @@
 Dep. Variable:                 labels   No. Observations:                  140
 Model:                        MNLogit   Df Residuals:                       44
 Method:                           MLE   Df Model:                           90
-Date:                Sun, 23 Oct 2022   Pseudo R-squ.:                     nan
-Time:                        02:57:34   Log-Likelihood:                    nan
+Date:                Tue, 15 Nov 2022   Pseudo R-squ.:                     nan
+Time:                        00:32:30   Log-Likelihood:                    nan
 converged:                       True   LL-Null:                       -269.77
 Covariance Type:            nonrobust   LLR p-value:                       nan
 =================================================================================================================
@@ -126,7 +126,7 @@ population                                           nan        nan        nan  
 ====================================================================================
 Model:                      MNLogit                 Pseudo R-squared:        nan    
 Dependent Variable:         labels                  AIC:                     nan    
-Date:                       2022-10-23 02:57        BIC:                     nan    
+Date:                       2022-11-15 00:32        BIC:                     nan    
 No. Observations:           140                     Log-Likelihood:          nan    
 Df Model:                   90                      LL-Null:                 -269.77
 Df Residuals:               44                      LLR p-value:             nan    

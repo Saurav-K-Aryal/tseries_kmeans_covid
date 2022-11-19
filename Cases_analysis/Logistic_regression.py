@@ -16,6 +16,7 @@ scaler = MinMaxScaler()
 
 # df = pd.read_csv('combined_dfs.csv')
 df = pd.read_csv('data.csv')
+print(df.columns)
 # print(df.dtypes)
 # df.drop(columns=['Unnamed: 0'], inplace=True)
 df = df[df['labels'].notna()]  #dropping countries with no labels
