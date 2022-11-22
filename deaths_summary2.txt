@@ -1,0 +1,16 @@
+                                         features       coef
+0                     average_temperature_celsius   0.652433
+1                      comorbidity_mortality_rate   1.693972
+2   average_new_fully_vaccinated_per_day_per_1000  27.391687
+3         average_new_vaccinated_per_day_per_1000 -22.428165
+4             average_new_tested_per_day_per_1000  -1.418981
+5                             diabetes_prevalence   1.488171
+6                              gdp_per_capita_usd  41.554868
+7                                         gdp_usd   4.562496
+8                             human_capital_index  -0.751905
+9                                        latitude  -0.194516
+10                             population_density -17.533544
+11                             smoking_prevalence  -0.978509
+12              total_cases_divided_by_population  -0.948184
+13             total_deaths_divided_by_population   0.102493
+14                                     population   3.487072

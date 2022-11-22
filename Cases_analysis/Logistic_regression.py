@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 scaler = MinMaxScaler()
 
 # df = pd.read_csv('combined_dfs.csv')
-df = pd.read_csv('data.csv')
+df = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/Cases_analysis/nikeshData_+_newLabels_cases.csv')
 print(df.columns)
 # print(df.dtypes)
 # df.drop(columns=['Unnamed: 0'], inplace=True)
@@ -67,7 +67,7 @@ print('Coefficients: \n', model1.coef_)
 summary = pd.DataFrame(zip(X_train.columns, np.transpose(model1.coef_.tolist()[0])), columns=['features', 'coef'])
 
 #output added to summary file for better redability 
-with open("summary.txt", 'w') as f:
+with open("cases_summary2.txt", 'w') as f:
     print(summary, file = f)
     f.close()
 
@@ -103,7 +103,7 @@ logit_model=sm.MNLogit(y_train,sm.add_constant(X_train))
 result=logit_model.fit()
 stats1=result.summary()
 stats2=result.summary2()
-with open("output3.txt", 'w') as f:
+with open("cases_summary1.txt", 'w') as f:
     print(stats1, file = f)
     print(stats2, file = f)
     f.close()

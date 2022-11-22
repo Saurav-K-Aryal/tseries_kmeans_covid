@@ -191,51 +191,6 @@ def finalize(deaths_df):
 
 	plot_world_map(k, deaths_df)
 
-def finalize_cases(deaths_df):
-	deaths_list = deaths_df.values.tolist()
-	# print(deaths_list)
-	import random
-
-	random.shuffle(deaths_list)
-
-	for val in deaths_list[:2]:
-		x = val[:-3]
-		plt.plot([i for i in range(len(x))], val[:-3], label=val[-3], alpha=0.8, color="blue", linewidth="1")
-
-	plt.show()
-
-	model, k = run_experiment(deaths_df, num_trails=1)
-	# model, k = choose_optimal_model(deaths_df)
-	vals_df = deaths_df[[col for col in deaths_df.columns if 't' == col[0]]]
-	print(vals_df, "HERE!!!")
-	model.fit_predict(vals_df)
-	# print(deaths_df['labels'])
-	deaths_df['labels'] = model.fit_predict(vals_df)
-	deaths_df.to_csv('cases_out.csv')
-	print(set(deaths_df['labels']))
-
-
-	plot_clusters(k, deaths_df, model)
-	# plt.figure()
-
-	plot_world_map(k, deaths_df)
-	# model, k = choose_optimal_model(deaths_df)
-	# deaths_df['labels'] = model.fit_predict(deaths_df[[col for col in deaths_df.columns if 't' == col[0]]])
-### cases
-# cases_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-# labels = choose_optimal_model(cases_df)
-# cases_df['labels'] = labels
-# cases_df.to_csv('cases_out.csv')
-
-## cases
-print('For cases per capita')
-# deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-# print("LOL", deaths_df.isnull().values.any())
-deaths_df = deaths_df[deaths_df['t0'].notna()] # remvoe any NAs
-
-plt.show()
-finalize_cases(deaths_df)
 
 
 # deaths
