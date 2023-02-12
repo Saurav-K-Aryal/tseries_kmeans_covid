@@ -198,5 +198,7 @@ print('For deaths per capita')
 deaths_df = get_csse_data('./COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
 # print("LOL", deaths_df.isnull().values.any())
 deaths_df = deaths_df[deaths_df['t0'].notna()]
+print("check")
+# print(deaths_df)
 plt.show()
 finalize(deaths_df)

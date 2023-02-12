@@ -13,16 +13,27 @@ from regressors import stats
 import shap
 from sklearn.feature_extraction.text import TfidfVectorizer
 scaler = MinMaxScaler()
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import LinearSVC
+from sklearn.metrics import plot_precision_recall_curve
 
 # df = pd.read_csv('combined_dfs.csv')
-df = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/Cases_analysis/nikeshData_+_newLabels_cases.csv')
+df = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/Cases_analysis/newData_+_newLabels_cases.csv')
 print(df.columns)
 # print(df.dtypes)
 # df.drop(columns=['Unnamed: 0'], inplace=True)
 df = df[df['labels'].notna()]  #dropping countries with no labels
 # print(df.head())
 
-col_names = ['average_temperature_celsius','comorbidity_mortality_rate','average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000','average_new_tested_per_day_per_1000','diabetes_prevalence','gdp_per_capita_usd','gdp_usd','human_capital_index','latitude','population_density','smoking_prevalence', 'total_cases_divided_by_population','total_deaths_divided_by_population','population']
+col_names = ['average_temperature_celsius', 'comorbidity_mortality_rate',
+                          'average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000',
+                          'average_new_tested_per_day_per_1000','diabetes_prevalence',
+                          'gdp_per_capita_usd','gdp_usd','human_capital_index',
+                          'latitude','population_density','smoking_prevalence',
+                          'total_cases_divided_by_population', 'total_deaths_divided_by_population','population', 'international_travel_controls', 'stay_at_home_requirements', 'testing_policy',
+        'public_information_campaigns', 'vaccination_policy', 'facial_coverings', 'cancel_public_events']
 
 features = df[col_names]
 
@@ -129,3 +140,9 @@ with open("cases_summary1.txt", 'w') as f:
 # print(shap_values)
 # # shap.plots.beeswarm(shap_values)
 # shap.summary_plot(shap_values = shap_values)
+
+# print(X.shape)
+# print(y.shape)
+
+# plot_precision_recall_curve(model1, X_test, y_test, name = "Logistic Regression")
+

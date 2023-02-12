@@ -3,8 +3,8 @@
 Dep. Variable:                 labels   No. Observations:                  127
 Model:                        MNLogit   Df Residuals:                       47
 Method:                           MLE   Df Model:                           75
-Date:                Mon, 21 Nov 2022   Pseudo R-squ.:                  0.5021
-Time:                        22:32:40   Log-Likelihood:                -111.37
+Date:                Thu, 24 Nov 2022   Pseudo R-squ.:                  0.5021
+Time:                        21:54:59   Log-Likelihood:                -111.37
 converged:                       True   LL-Null:                       -223.66
 Covariance Type:            nonrobust   LLR p-value:                 7.681e-17
 =================================================================================================================
@@ -107,7 +107,7 @@ population                                        4.7196      8.529      0.553  
 ==================================================================================================
 Model:                         MNLogit                     Pseudo R-squared:            0.502     
 Dependent Variable:            labels                      AIC:                         382.7322  
-Date:                          2022-11-21 22:32            BIC:                         610.2672  
+Date:                          2022-11-24 21:54            BIC:                         610.2672  
 No. Observations:              127                         Log-Likelihood:              -111.37   
 Df Model:                      75                          LL-Null:                     -223.66   
 Df Residuals:                  47                          LLR p-value:                 7.6808e-17

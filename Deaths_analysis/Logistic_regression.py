@@ -15,15 +15,22 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 scaler = MinMaxScaler()
 
 # df = pd.read_csv('combined_dfs.csv')
-df = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/Deaths_analysis/nikeshData_+_newLabels.csv')
-print(df.columns)
+
+df = pd.read_csv('/home/anirudd/Documents/tseries_kmeans_covid/Deaths_analysis/newData_+_newLabels_deaths.csv')
+print(df.head)
 # print(df.dtypes)
 # df.drop(columns=['Unnamed: 0'], inplace=True)
 df = df[df['labels'].notna()]  #dropping countries with no labels
+df.replace(to_replace=[], value='')
 # print(df.head())
 
-col_names = ['average_temperature_celsius','comorbidity_mortality_rate','average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000','average_new_tested_per_day_per_1000','diabetes_prevalence','gdp_per_capita_usd','gdp_usd','human_capital_index','latitude','population_density','smoking_prevalence', 'total_cases_divided_by_population','total_deaths_divided_by_population','population']
-
+col_names = ['average_temperature_celsius', 'comorbidity_mortality_rate',
+                          'average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000',
+                          'average_new_tested_per_day_per_1000','diabetes_prevalence',
+                          'gdp_per_capita_usd','gdp_usd','human_capital_index',
+                          'latitude','population_density','smoking_prevalence',
+                          'total_cases_divided_by_population', 'total_deaths_divided_by_population','population', 'international_travel_controls', 'stay_at_home_requirements', 'testing_policy',
+        'public_information_campaigns', 'vaccination_policy', 'facial_coverings', 'cancel_public_events']
 features = df[col_names]
 
 scaler = MinMaxScaler()
@@ -31,11 +38,17 @@ scaler = MinMaxScaler()
 df[col_names] = scaler.fit_transform(features.values)
 col_names.append('labels')
 df = df[col_names]
-
+# df.replace('[]', None)
 #
 print(df.head())
 # print(df.dtypes)
-X = df[['average_temperature_celsius','comorbidity_mortality_rate','average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000','average_new_tested_per_day_per_1000','diabetes_prevalence','gdp_per_capita_usd','gdp_usd','human_capital_index','latitude','population_density','smoking_prevalence', 'total_cases_divided_by_population','total_deaths_divided_by_population','population']].fillna(0)
+X = df[['average_temperature_celsius', 'comorbidity_mortality_rate',
+                          'average_new_fully_vaccinated_per_day_per_1000','average_new_vaccinated_per_day_per_1000',
+                          'average_new_tested_per_day_per_1000','diabetes_prevalence',
+                          'gdp_per_capita_usd','gdp_usd','human_capital_index',
+                          'latitude','population_density','smoking_prevalence',
+                          'total_cases_divided_by_population', 'total_deaths_divided_by_population','population', 'international_travel_controls', 'stay_at_home_requirements', 'testing_policy',
+        'public_information_campaigns', 'vaccination_policy', 'facial_coverings', 'cancel_public_events']].fillna(0)
 y = df['labels']
 
 df = df.astype({'labels' : 'category'})
@@ -129,3 +142,32 @@ with open("deaths_summary1.txt", 'w') as f:
 # print(shap_values)
 # # shap.plots.beeswarm(shap_values)
 # shap.summary_plot(shap_values = shap_values)
+
+# import matplotlib.pyplot as plt
+# from itertools import cycle
+# from sklearn.metrics import precision_recall_curve
+# from sklearn.metrics import average_precision_score
+# from sklearn.multiclass import OneVsRestClassifier
+# from sklearn.metrics import PrecisionRecallDisplay
+
+# setup plot details
+# colors = cycle(["navy", "turquoise", "darkorange", "cornflowerblue", "teal"])
+
+# _, ax = plt.subplots(figsize=(7, 8))
+
+# f_scores = np.linspace(0.2, 0.8, num=4)
+# lines, labels = [], []
+# for f_score in f_scores:
+#     x = np.linspace(0.01, 1)
+#     y = f_score * x / (2 * x - f_score)
+#     (l,) = plt.plot(x[y >= 0], y[y >= 0], color="gray", alpha=0.2)
+#     plt.annotate("f1={0:0.1f}".format(f_score), xy=(0.9, y[45] + 0.02))
+
+# display = PrecisionRecallDisplay(
+#     recall="micro",
+#     precision="micro",
+#     average_precision="micro",
+# )
+# display.plot(ax=ax, name="Micro-average precision-recall", color="gold")
+
+# plt.show()

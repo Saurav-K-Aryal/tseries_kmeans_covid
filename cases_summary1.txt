@@ -1,212 +1,212 @@
                           MNLogit Regression Results                          
 ==============================================================================
-Dep. Variable:                 labels   No. Observations:                  127
-Model:                        MNLogit   Df Residuals:                       47
+Dep. Variable:                 labels   No. Observations:                  144
+Model:                        MNLogit   Df Residuals:                       64
 Method:                           MLE   Df Model:                           75
-Date:                Mon, 21 Nov 2022   Pseudo R-squ.:                  0.3673
-Time:                        22:34:36   Log-Likelihood:                -138.13
-converged:                       True   LL-Null:                       -218.31
-Covariance Type:            nonrobust   LLR p-value:                 3.779e-08
+Date:                Wed, 01 Feb 2023   Pseudo R-squ.:                  0.2538
+Time:                        19:55:19   Log-Likelihood:                -186.94
+converged:                       True   LL-Null:                       -250.54
+Covariance Type:            nonrobust   LLR p-value:                 0.0001604
 =================================================================================================================
                                      labels=1       coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------
-const                                            -3.2316      3.172     -1.019      0.308      -9.449       2.986
-average_temperature_celsius                       6.1021      2.831      2.155      0.031       0.553      11.651
-comorbidity_mortality_rate                       -1.4832      2.268     -0.654      0.513      -5.928       2.962
-average_new_fully_vaccinated_per_day_per_1000   -24.0868     24.260     -0.993      0.321     -71.636      23.462
-average_new_vaccinated_per_day_per_1000          17.9906     25.736      0.699      0.485     -32.452      68.433
-average_new_tested_per_day_per_1000              -9.2790      8.838     -1.050      0.294     -26.601       8.042
-diabetes_prevalence                               2.5157      2.338      1.076      0.282      -2.066       7.098
-gdp_per_capita_usd                                2.6532      4.928      0.538      0.590      -7.005      12.312
-gdp_usd                                          -7.0609     11.408     -0.619      0.536     -29.421      15.299
-human_capital_index                               2.3810      2.145      1.110      0.267      -1.824       6.586
-latitude                                         -1.6015      1.939     -0.826      0.409      -5.403       2.200
-population_density                              -31.3714     41.194     -0.762      0.446    -112.111      49.368
-smoking_prevalence                                0.3715      1.861      0.200      0.842      -3.277       4.019
-total_cases_divided_by_population                 2.0024      3.163      0.633      0.527      -4.197       8.201
-total_deaths_divided_by_population               -7.3156      3.600     -2.032      0.042     -14.372      -0.259
-population                                       13.6336     26.328      0.518      0.605     -37.969      65.236
+const                                             0.4087      2.421      0.169      0.866      -4.336       5.153
+average_temperature_celsius                       2.4084      1.865      1.291      0.197      -1.247       6.064
+comorbidity_mortality_rate                       -1.8998      1.962     -0.968      0.333      -5.745       1.946
+average_new_fully_vaccinated_per_day_per_1000   -13.1277     18.759     -0.700      0.484     -49.894      23.639
+average_new_vaccinated_per_day_per_1000           9.6743     20.060      0.482      0.630     -29.642      48.991
+average_new_tested_per_day_per_1000              -6.0230      7.177     -0.839      0.401     -20.090       8.044
+diabetes_prevalence                               3.3274      2.238      1.487      0.137      -1.060       7.714
+gdp_per_capita_usd                               -0.6622      4.096     -0.162      0.872      -8.689       7.365
+gdp_usd                                         -21.7005     20.504     -1.058      0.290     -61.887      18.486
+human_capital_index                               2.2877      1.983      1.154      0.249      -1.598       6.174
+latitude                                         -2.5942      1.847     -1.404      0.160      -6.215       1.026
+population_density                              -59.5130     34.993     -1.701      0.089    -128.098       9.072
+smoking_prevalence                                0.8011      1.764      0.454      0.650      -2.656       4.259
+total_cases_divided_by_population                 1.8686      2.449      0.763      0.445      -2.932       6.669
+total_deaths_divided_by_population              -10.1736      3.339     -3.047      0.002     -16.718      -3.629
+population                                        9.4046     24.367      0.386      0.700     -38.355      57.164
 -----------------------------------------------------------------------------------------------------------------
                                      labels=2       coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------
-const                                             3.6435      2.377      1.533      0.125      -1.016       8.303
-average_temperature_celsius                       1.4366      2.030      0.708      0.479      -2.543       5.416
-comorbidity_mortality_rate                       -2.4435      2.625     -0.931      0.352      -7.587       2.700
-average_new_fully_vaccinated_per_day_per_1000     6.8372     19.942      0.343      0.732     -32.249      45.923
-average_new_vaccinated_per_day_per_1000          -8.7199     21.217     -0.411      0.681     -50.305      32.865
-average_new_tested_per_day_per_1000              15.0211     58.732      0.256      0.798    -100.092     130.134
-diabetes_prevalence                               0.6914      2.747      0.252      0.801      -4.693       6.076
-gdp_per_capita_usd                             -155.8683     82.954     -1.879      0.060    -318.456       6.719
-gdp_usd                                         -25.5989     22.975     -1.114      0.265     -70.629      19.431
-human_capital_index                               5.7900      4.040      1.433      0.152      -2.128      13.708
-latitude                                         -5.5138      2.532     -2.177      0.029     -10.477      -0.550
-population_density                             -283.0703    160.285     -1.766      0.077    -597.222      31.082
-smoking_prevalence                                3.7764      2.433      1.552      0.121      -0.992       8.544
-total_cases_divided_by_population               -10.5740     13.864     -0.763      0.446     -37.747      16.599
-total_deaths_divided_by_population                1.9618      5.543      0.354      0.723      -8.901      12.825
-population                                       43.2860     23.970      1.806      0.071      -3.694      90.266
+const                                             1.2301      2.513      0.490      0.624      -3.695       6.155
+average_temperature_celsius                       0.9823      1.891      0.520      0.603      -2.723       4.688
+comorbidity_mortality_rate                       -0.3106      2.210     -0.141      0.888      -4.641       4.020
+average_new_fully_vaccinated_per_day_per_1000     9.9884     15.167      0.659      0.510     -19.739      39.716
+average_new_vaccinated_per_day_per_1000         -10.7261     16.641     -0.645      0.519     -43.342      21.889
+average_new_tested_per_day_per_1000             -23.5375     38.288     -0.615      0.539     -98.581      51.506
+diabetes_prevalence                              -0.1839      2.569     -0.072      0.943      -5.218       4.850
+gdp_per_capita_usd                              -30.2030     42.786     -0.706      0.480    -114.062      53.656
+gdp_usd                                         -52.6366     82.258     -0.640      0.522    -213.859     108.585
+human_capital_index                               1.9497      3.145      0.620      0.535      -4.214       8.113
+latitude                                         -3.8688      2.170     -1.783      0.075      -8.122       0.385
+population_density                             -129.9884    127.011     -1.023      0.306    -378.925     118.949
+smoking_prevalence                                2.7318      2.023      1.351      0.177      -1.233       6.696
+total_cases_divided_by_population                -3.7847      6.479     -0.584      0.559     -16.483       8.913
+total_deaths_divided_by_population               -0.1020      3.403     -0.030      0.976      -6.772       6.568
+population                                       39.0161     24.099      1.619      0.105      -8.216      86.249
 -----------------------------------------------------------------------------------------------------------------
                                      labels=3       coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------
-const                                            -1.0328      2.219     -0.466      0.642      -5.381       3.316
-average_temperature_celsius                       4.0466      1.859      2.177      0.029       0.404       7.689
-comorbidity_mortality_rate                       -1.3613      2.036     -0.669      0.504      -5.352       2.630
-average_new_fully_vaccinated_per_day_per_1000    -7.4961     21.626     -0.347      0.729     -49.882      34.890
-average_new_vaccinated_per_day_per_1000           8.7586     22.756      0.385      0.700     -35.843      53.360
-average_new_tested_per_day_per_1000               3.7428      9.173      0.408      0.683     -14.235      21.721
-diabetes_prevalence                              -0.0229      2.384     -0.010      0.992      -4.695       4.649
-gdp_per_capita_usd                               14.3223      5.840      2.452      0.014       2.875      25.769
-gdp_usd                                         -18.5518     16.521     -1.123      0.261     -50.933      13.829
-human_capital_index                               3.8080      2.313      1.646      0.100      -0.726       8.342
-latitude                                         -4.7424      1.888     -2.512      0.012      -8.443      -1.042
-population_density                               -8.3097     10.568     -0.786      0.432     -29.022      12.403
-smoking_prevalence                               -0.2494      1.896     -0.132      0.895      -3.966       3.467
-total_cases_divided_by_population               -12.3857      4.500     -2.752      0.006     -21.205      -3.566
-total_deaths_divided_by_population                2.6979      2.600      1.037      0.300      -2.399       7.794
-population                                       34.5347     23.433      1.474      0.141     -11.392      80.462
+const                                             0.0890      2.009      0.044      0.965      -3.848       4.026
+average_temperature_celsius                       2.2777      1.523      1.496      0.135      -0.707       5.262
+comorbidity_mortality_rate                       -0.4880      1.673     -0.292      0.771      -3.767       2.791
+average_new_fully_vaccinated_per_day_per_1000    14.4684     13.792      1.049      0.294     -12.563      41.500
+average_new_vaccinated_per_day_per_1000         -13.9619     15.076     -0.926      0.354     -43.510      15.586
+average_new_tested_per_day_per_1000               1.5933      3.909      0.408      0.684      -6.068       9.255
+diabetes_prevalence                               0.5922      2.031      0.292      0.771      -3.389       4.574
+gdp_per_capita_usd                                2.6375      3.516      0.750      0.453      -4.253       9.528
+gdp_usd                                         -11.1430     13.038     -0.855      0.393     -36.697      14.411
+human_capital_index                               2.1815      1.646      1.325      0.185      -1.045       5.408
+latitude                                         -3.9248      1.618     -2.425      0.015      -7.096      -0.753
+population_density                                2.2919      7.917      0.289      0.772     -13.225      17.809
+smoking_prevalence                               -0.7407      1.600     -0.463      0.643      -3.877       2.396
+total_cases_divided_by_population                -2.9283      2.465     -1.188      0.235      -7.760       1.904
+total_deaths_divided_by_population               -0.8722      2.072     -0.421      0.674      -4.934       3.189
+population                                       25.6402     20.083      1.277      0.202     -13.722      65.003
 -----------------------------------------------------------------------------------------------------------------
                                      labels=4       coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------
-const                                            -0.2671      2.581     -0.103      0.918      -5.326       4.792
-average_temperature_celsius                       4.1998      2.189      1.918      0.055      -0.091       8.491
-comorbidity_mortality_rate                       -4.4230      2.222     -1.990      0.047      -8.778      -0.068
-average_new_fully_vaccinated_per_day_per_1000    -1.2110     21.034     -0.058      0.954     -42.436      40.015
-average_new_vaccinated_per_day_per_1000          -1.6879     22.420     -0.075      0.940     -45.631      42.255
-average_new_tested_per_day_per_1000             -31.1590     18.629     -1.673      0.094     -67.671       5.353
-diabetes_prevalence                              -0.2186      2.368     -0.092      0.926      -4.860       4.423
-gdp_per_capita_usd                                3.6922      7.525      0.491      0.624     -11.058      18.442
-gdp_usd                                        -161.9971    102.151     -1.586      0.113    -362.210      38.216
-human_capital_index                               2.7816      2.116      1.315      0.189      -1.365       6.928
-latitude                                          1.4267      2.307      0.618      0.536      -3.095       5.948
-population_density                               -2.9026     11.849     -0.245      0.806     -26.126      20.321
-smoking_prevalence                                0.9970      1.937      0.515      0.607      -2.800       4.794
-total_cases_divided_by_population                -0.7484      3.689     -0.203      0.839      -7.979       6.482
-total_deaths_divided_by_population              -10.6847      4.944     -2.161      0.031     -20.376      -0.994
-population                                       39.1843     28.080      1.395      0.163     -15.852      94.220
+const                                             1.4553      2.223      0.655      0.513      -2.903       5.813
+average_temperature_celsius                       1.6130      1.597      1.010      0.312      -1.516       4.743
+comorbidity_mortality_rate                       -3.3273      1.808     -1.840      0.066      -6.871       0.216
+average_new_fully_vaccinated_per_day_per_1000    12.4562     13.734      0.907      0.364     -14.461      39.374
+average_new_vaccinated_per_day_per_1000         -11.7656     14.927     -0.788      0.431     -41.023      17.492
+average_new_tested_per_day_per_1000               1.8767      3.427      0.548      0.584      -4.839       8.593
+diabetes_prevalence                               0.1500      2.187      0.069      0.945      -4.136       4.435
+gdp_per_capita_usd                               -1.1372      4.796     -0.237      0.813     -10.536       8.262
+gdp_usd                                         -97.3467     63.793     -1.526      0.127    -222.378      27.685
+human_capital_index                               1.2863      1.843      0.698      0.485      -2.325       4.898
+latitude                                         -0.1076      2.049     -0.052      0.958      -4.124       3.909
+population_density                              -32.2650     27.591     -1.169      0.242     -86.343      21.813
+smoking_prevalence                                1.2268      1.651      0.743      0.457      -2.009       4.463
+total_cases_divided_by_population                -2.8913      2.932     -0.986      0.324      -8.638       2.855
+total_deaths_divided_by_population               -7.6759      3.675     -2.088      0.037     -14.879      -0.472
+population                                       25.6587     23.742      1.081      0.280     -20.874      72.192
 -----------------------------------------------------------------------------------------------------------------
                                      labels=5       coef    std err          z      P>|z|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------------
-const                                             2.2177      1.998      1.110      0.267      -1.699       6.134
-average_temperature_celsius                       1.7404      1.561      1.115      0.265      -1.319       4.799
-comorbidity_mortality_rate                       -3.6681      2.064     -1.777      0.076      -7.713       0.377
-average_new_fully_vaccinated_per_day_per_1000    10.9841     19.247      0.571      0.568     -26.740      48.708
-average_new_vaccinated_per_day_per_1000         -12.5510     20.559     -0.610      0.542     -52.845      27.743
-average_new_tested_per_day_per_1000             -11.7558     13.613     -0.864      0.388     -38.436      14.924
-diabetes_prevalence                              -3.2518      2.436     -1.335      0.182      -8.027       1.524
-gdp_per_capita_usd                                1.8394      6.079      0.303      0.762     -10.076      13.755
-gdp_usd                                         -14.0092     14.797     -0.947      0.344     -43.012      14.993
-human_capital_index                              -0.2933      1.894     -0.155      0.877      -4.005       3.418
-latitude                                          0.4014      2.066      0.194      0.846      -3.647       4.450
-population_density                                2.7497      7.395      0.372      0.710     -11.744      17.244
-smoking_prevalence                                0.1899      1.954      0.097      0.923      -3.641       4.021
-total_cases_divided_by_population                -5.0878      3.357     -1.516      0.130     -11.667       1.491
-total_deaths_divided_by_population               -1.9597      3.078     -0.637      0.524      -7.992       4.072
-population                                       34.1033     23.211      1.469      0.142     -11.390      79.596
+const                                             2.4438      1.970      1.241      0.215      -1.416       6.304
+average_temperature_celsius                       1.0969      1.384      0.793      0.428      -1.615       3.809
+comorbidity_mortality_rate                       -2.3308      1.703     -1.369      0.171      -5.668       1.006
+average_new_fully_vaccinated_per_day_per_1000    13.4837     13.563      0.994      0.320     -13.099      40.067
+average_new_vaccinated_per_day_per_1000         -14.1434     14.818     -0.955      0.340     -43.185      14.899
+average_new_tested_per_day_per_1000               0.8717      4.557      0.191      0.848      -8.061       9.804
+diabetes_prevalence                              -2.0017      2.070     -0.967      0.334      -6.059       2.055
+gdp_per_capita_usd                               -0.2764      3.329     -0.083      0.934      -6.801       6.248
+gdp_usd                                          -5.9622      5.670     -1.051      0.293     -17.076       5.151
+human_capital_index                              -0.7623      1.554     -0.491      0.624      -3.807       2.283
+latitude                                         -0.6589      1.785     -0.369      0.712      -4.158       2.840
+population_density                                4.5418      7.547      0.602      0.547     -10.250      19.333
+smoking_prevalence                               -0.6477      1.606     -0.403      0.687      -3.795       2.500
+total_cases_divided_by_population                -3.0079      2.377     -1.265      0.206      -7.668       1.652
+total_deaths_divided_by_population               -2.0930      2.340     -0.895      0.371      -6.679       2.493
+population                                       26.2518     19.113      1.374      0.170     -11.208      63.712
 =================================================================================================================
                                          Results: MNLogit
 ==================================================================================================
-Model:                         MNLogit                     Pseudo R-squared:            0.367     
-Dependent Variable:            labels                      AIC:                         436.2504  
-Date:                          2022-11-21 22:34            BIC:                         663.7854  
-No. Observations:              127                         Log-Likelihood:              -138.13   
-Df Model:                      75                          LL-Null:                     -218.31   
-Df Residuals:                  47                          LLR p-value:                 3.7788e-08
+Model:                         MNLogit                     Pseudo R-squared:            0.254     
+Dependent Variable:            labels                      AIC:                         533.8896  
+Date:                          2023-02-01 19:55            BIC:                         771.4746  
+No. Observations:              144                         Log-Likelihood:              -186.94   
+Df Model:                      75                          LL-Null:                     -250.54   
+Df Residuals:                  64                          LLR p-value:                 0.00016037
 Converged:                     1.0000                      Scale:                       1.0000    
-No. Iterations:                12.0000                                                            
+No. Iterations:                11.0000                                                            
 --------------------------------------------------------------------------------------------------
                    labels = 0                    Coef.   Std.Err.    t    P>|t|    [0.025   0.975]
 --------------------------------------------------------------------------------------------------
-                                        const    -3.2316   3.1723 -1.0187 0.3084   -9.4492  2.9860
-                  average_temperature_celsius     6.1021   2.8310  2.1555 0.0311    0.5535 11.6507
-                   comorbidity_mortality_rate    -1.4832   2.2679 -0.6540 0.5131   -5.9282  2.9618
-average_new_fully_vaccinated_per_day_per_1000   -24.0868  24.2601 -0.9929 0.3208  -71.6357 23.4622
-      average_new_vaccinated_per_day_per_1000    17.9906  25.7362  0.6990 0.4845  -32.4515 68.4326
-          average_new_tested_per_day_per_1000    -9.2790   8.8376 -1.0499 0.2937  -26.6005  8.0424
-                          diabetes_prevalence     2.5157   2.3378  1.0761 0.2819   -2.0662  7.0976
-                           gdp_per_capita_usd     2.6532   4.9279  0.5384 0.5903   -7.0052 12.3117
-                                      gdp_usd    -7.0609  11.4082 -0.6189 0.5360  -29.4206 15.2988
-                          human_capital_index     2.3810   2.1455  1.1098 0.2671   -1.8241  6.5861
-                                     latitude    -1.6015   1.9394 -0.8258 0.4089   -5.4027  2.1997
-                           population_density   -31.3714  41.1942 -0.7615 0.4463 -112.1106 49.3677
-                           smoking_prevalence     0.3715   1.8613  0.1996 0.8418   -3.2766  4.0195
-            total_cases_divided_by_population     2.0024   3.1629  0.6331 0.5267   -4.1967  8.2014
-           total_deaths_divided_by_population    -7.3156   3.6003 -2.0320 0.0422  -14.3721 -0.2592
-                                   population    13.6336  26.3282  0.5178 0.6046  -37.9688 65.2359
+                                        const     0.4087   2.4207  0.1688 0.8659   -4.3358  5.1532
+                  average_temperature_celsius     2.4084   1.8651  1.2913 0.1966   -1.2470  6.0639
+                   comorbidity_mortality_rate    -1.8998   1.9620 -0.9683 0.3329   -5.7453  1.9457
+average_new_fully_vaccinated_per_day_per_1000   -13.1277  18.7588 -0.6998 0.4840  -49.8943 23.6388
+      average_new_vaccinated_per_day_per_1000     9.6743  20.0599  0.4823 0.6296  -29.6424 48.9910
+          average_new_tested_per_day_per_1000    -6.0230   7.1769 -0.8392 0.4013  -20.0895  8.0435
+                          diabetes_prevalence     3.3274   2.2383  1.4866 0.1371   -1.0596  7.7145
+                           gdp_per_capita_usd    -0.6622   4.0955 -0.1617 0.8715   -8.6893  7.3649
+                                      gdp_usd   -21.7005  20.5038 -1.0584 0.2899  -61.8873 18.4863
+                          human_capital_index     2.2877   1.9826  1.1539 0.2485   -1.5982  6.1737
+                                     latitude    -2.5942   1.8472 -1.4044 0.1602   -6.2147  1.0263
+                           population_density   -59.5130  34.9930 -1.7007 0.0890 -128.0979  9.0720
+                           smoking_prevalence     0.8011   1.7640  0.4541 0.6497   -2.6563  4.2585
+            total_cases_divided_by_population     1.8686   2.4492  0.7630 0.4455   -2.9317  6.6690
+           total_deaths_divided_by_population   -10.1736   3.3391 -3.0468 0.0023  -16.7181 -3.6291
+                                   population     9.4046  24.3674  0.3860 0.6995  -38.3547 57.1639
 --------------------------------------------------------------------------------------------------
                   labels = 1                    Coef.   Std.Err.    t    P>|t|    [0.025   0.975] 
 --------------------------------------------------------------------------------------------------
-                                        const    3.6435   2.3773  1.5326 0.1254   -1.0159   8.3030
-                  average_temperature_celsius    1.4366   2.0303  0.7076 0.4792   -2.5427   5.4159
-                   comorbidity_mortality_rate   -2.4435   2.6245 -0.9310 0.3518   -7.5875   2.7005
-average_new_fully_vaccinated_per_day_per_1000    6.8372  19.9422  0.3428 0.7317  -32.2489  45.9233
-      average_new_vaccinated_per_day_per_1000   -8.7199  21.2172 -0.4110 0.6811  -50.3048  32.8650
-          average_new_tested_per_day_per_1000   15.0211  58.7320  0.2558 0.7981 -100.0915 130.1337
-                          diabetes_prevalence    0.6914   2.7472  0.2517 0.8013   -4.6929   6.0758
-                           gdp_per_capita_usd -155.8683  82.9544 -1.8790 0.0602 -318.4559   6.7193
-                                      gdp_usd  -25.5989  22.9751 -1.1142 0.2652  -70.6293  19.4315
-                          human_capital_index    5.7900   4.0401  1.4331 0.1518   -2.1284  13.7084
-                                     latitude   -5.5138   2.5325 -2.1772 0.0295  -10.4774  -0.5502
-                           population_density -283.0703 160.2845 -1.7660 0.0774 -597.2223  31.0816
-                           smoking_prevalence    3.7764   2.4326  1.5524 0.1206   -0.9915   8.5443
-            total_cases_divided_by_population  -10.5740  13.8638 -0.7627 0.4456  -37.7465  16.5986
-           total_deaths_divided_by_population    1.9618   5.5425  0.3540 0.7234   -8.9014  12.8250
-                                   population   43.2860  23.9700  1.8058 0.0709   -3.6943  90.2663
+                                        const    1.2301   2.5128  0.4895 0.6245   -3.6950   6.1552
+                  average_temperature_celsius    0.9823   1.8906  0.5196 0.6034   -2.7232   4.6877
+                   comorbidity_mortality_rate   -0.3106   2.2096 -0.1406 0.8882   -4.6414   4.0202
+average_new_fully_vaccinated_per_day_per_1000    9.9884  15.1674  0.6585 0.5102  -19.7392  39.7160
+      average_new_vaccinated_per_day_per_1000  -10.7261  16.6409 -0.6446 0.5192  -43.3416  21.8894
+          average_new_tested_per_day_per_1000  -23.5375  38.2884 -0.6147 0.5387  -98.5814  51.5063
+                          diabetes_prevalence   -0.1839   2.5685 -0.0716 0.9429   -5.2181   4.8504
+                           gdp_per_capita_usd  -30.2030  42.7861 -0.7059 0.4802 -114.0622  53.6562
+                                      gdp_usd  -52.6366  82.2576 -0.6399 0.5222 -213.8586 108.5854
+                          human_capital_index    1.9497   3.1448  0.6200 0.5353   -4.2140   8.1134
+                                     latitude   -3.8688   2.1702 -1.7827 0.0746   -8.1223   0.3848
+                           population_density -129.9884 127.0110 -1.0234 0.3061 -378.9253 118.9486
+                           smoking_prevalence    2.7318   2.0227  1.3506 0.1768   -1.2326   6.6962
+            total_cases_divided_by_population   -3.7847   6.4788 -0.5842 0.5591  -16.4828   8.9135
+           total_deaths_divided_by_population   -0.1020   3.4030 -0.0300 0.9761   -6.7717   6.5678
+                                   population   39.0161  24.0987  1.6190 0.1054   -8.2164  86.2487
 --------------------------------------------------------------------------------------------------
                    labels = 2                     Coef.   Std.Err.    t    P>|t|   [0.025   0.975]
 --------------------------------------------------------------------------------------------------
-                                        const     -1.0328   2.2186 -0.4655 0.6416  -5.3811  3.3155
-                  average_temperature_celsius      4.0466   1.8586  2.1772 0.0295   0.4037  7.6895
-                   comorbidity_mortality_rate     -1.3613   2.0362 -0.6686 0.5038  -5.3521  2.6295
-average_new_fully_vaccinated_per_day_per_1000     -7.4961  21.6259 -0.3466 0.7289 -49.8822 34.8899
-      average_new_vaccinated_per_day_per_1000      8.7586  22.7562  0.3849 0.7003 -35.8426 53.3599
-          average_new_tested_per_day_per_1000      3.7428   9.1728  0.4080 0.6832 -14.2355 21.7211
-                          diabetes_prevalence     -0.0229   2.3838 -0.0096 0.9923  -4.6950  4.6492
-                           gdp_per_capita_usd     14.3223   5.8404  2.4523 0.0142   2.8754 25.7693
-                                      gdp_usd    -18.5518  16.5213 -1.1229 0.2615 -50.9330 13.8295
-                          human_capital_index      3.8080   2.3133  1.6462 0.0997  -0.7259  8.3420
-                                     latitude     -4.7424   1.8880 -2.5119 0.0120  -8.4428 -1.0420
-                           population_density     -8.3097  10.5678 -0.7863 0.4317 -29.0223 12.4028
-                           smoking_prevalence     -0.2494   1.8963 -0.1315 0.8954  -3.9661  3.4672
-            total_cases_divided_by_population    -12.3857   4.4999 -2.7524 0.0059 -21.2054 -3.5660
-           total_deaths_divided_by_population      2.6979   2.6004  1.0375 0.2995  -2.3988  7.7945
-                                   population     34.5347  23.4326  1.4738 0.1405 -11.3923 80.4617
+                                        const      0.0890   2.0090  0.0443 0.9647  -3.8485  4.0265
+                  average_temperature_celsius      2.2777   1.5227  1.4958 0.1347  -0.7068  5.2622
+                   comorbidity_mortality_rate     -0.4880   1.6730 -0.2917 0.7705  -3.7670  2.7910
+average_new_fully_vaccinated_per_day_per_1000     14.4684  13.7920  1.0490 0.2942 -12.5634 41.5001
+      average_new_vaccinated_per_day_per_1000    -13.9619  15.0760 -0.9261 0.3544 -43.5103 15.5865
+          average_new_tested_per_day_per_1000      1.5933   3.9090  0.4076 0.6836  -6.0681  9.2547
+                          diabetes_prevalence      0.5922   2.0314  0.2915 0.7707  -3.3892  4.5736
+                           gdp_per_capita_usd      2.6375   3.5156  0.7502 0.4531  -4.2529  9.5279
+                                      gdp_usd    -11.1430  13.0379 -0.8547 0.3927 -36.6969 14.4109
+                          human_capital_index      2.1815   1.6460  1.3253 0.1851  -1.0446  5.4076
+                                     latitude     -3.9248   1.6182 -2.4254 0.0153  -7.0964 -0.7531
+                           population_density      2.2919   7.9172  0.2895 0.7722 -13.2254 17.8093
+                           smoking_prevalence     -0.7407   1.6003 -0.4628 0.6435  -3.8772  2.3959
+            total_cases_divided_by_population     -2.9283   2.4653 -1.1878 0.2349  -7.7602  1.9036
+           total_deaths_divided_by_population     -0.8722   2.0722 -0.4209 0.6738  -4.9337  3.1893
+                                   population     25.6402  20.0833  1.2767 0.2017 -13.7225 65.0028
 --------------------------------------------------------------------------------------------------
-                  labels = 3                     Coef.   Std.Err.    t    P>|t|    [0.025   0.975]
+                   labels = 3                    Coef.   Std.Err.    t    P>|t|    [0.025   0.975]
 --------------------------------------------------------------------------------------------------
-                                        const    -0.2671   2.5813 -0.1035 0.9176   -5.3263  4.7922
-                  average_temperature_celsius     4.1998   2.1894  1.9182 0.0551   -0.0913  8.4910
-                   comorbidity_mortality_rate    -4.4230   2.2222 -1.9904 0.0465   -8.7784 -0.0676
-average_new_fully_vaccinated_per_day_per_1000    -1.2110  21.0338 -0.0576 0.9541  -42.4364 40.0145
-      average_new_vaccinated_per_day_per_1000    -1.6879  22.4202 -0.0753 0.9400  -45.6306 42.2549
-          average_new_tested_per_day_per_1000   -31.1590  18.6288 -1.6726 0.0944  -67.6707  5.3528
-                          diabetes_prevalence    -0.2186   2.3681 -0.0923 0.9264   -4.8601  4.4229
-                           gdp_per_capita_usd     3.6922   7.5255  0.4906 0.6237  -11.0575 18.4419
-                                      gdp_usd  -161.9971 102.1515 -1.5859 0.1128 -362.2103 38.2161
-                          human_capital_index     2.7816   2.1155  1.3148 0.1886   -1.3649  6.9280
-                                     latitude     1.4267   2.3069  0.6184 0.5363   -3.0948  5.9482
-                           population_density    -2.9026  11.8490 -0.2450 0.8065  -26.1263 20.3211
-                           smoking_prevalence     0.9970   1.9372  0.5147 0.6068   -2.7998  4.7938
-            total_cases_divided_by_population    -0.7484   3.6892 -0.2029 0.8392   -7.9791  6.4822
-           total_deaths_divided_by_population   -10.6847   4.9445 -2.1609 0.0307  -20.3757 -0.9938
-                                   population    39.1843  28.0802  1.3954 0.1629  -15.8519 94.2205
+                                        const     1.4553   2.2234  0.6545 0.5128   -2.9025  5.8132
+                  average_temperature_celsius     1.6130   1.5967  1.0102 0.3124   -1.5165  4.7425
+                   comorbidity_mortality_rate    -3.3273   1.8080 -1.8403 0.0657   -6.8710  0.2163
+average_new_fully_vaccinated_per_day_per_1000    12.4562  13.7337  0.9070 0.3644  -14.4614 39.3738
+      average_new_vaccinated_per_day_per_1000   -11.7656  14.9275 -0.7882 0.4306  -41.0229 17.4917
+          average_new_tested_per_day_per_1000     1.8767   3.4267  0.5477 0.5839   -4.8395  8.5929
+                          diabetes_prevalence     0.1500   2.1865  0.0686 0.9453   -4.1355  4.4355
+                           gdp_per_capita_usd    -1.1372   4.7956 -0.2371 0.8126  -10.5364  8.2619
+                                      gdp_usd   -97.3467  63.7928 -1.5260 0.1270 -222.3783 27.6848
+                          human_capital_index     1.2863   1.8427  0.6981 0.4851   -2.3254  4.8981
+                                     latitude    -0.1076   2.0491 -0.0525 0.9581   -4.1238  3.9087
+                           population_density   -32.2650  27.5914 -1.1694 0.2422  -86.3432 21.8132
+                           smoking_prevalence     1.2268   1.6509  0.7431 0.4574   -2.0090  4.4626
+            total_cases_divided_by_population    -2.8913   2.9319 -0.9862 0.3241   -8.6378  2.8551
+           total_deaths_divided_by_population    -7.6759   3.6753 -2.0885 0.0368  -14.8794 -0.4724
+                                   population    25.6587  23.7418  1.0807 0.2798  -20.8743 72.1918
 --------------------------------------------------------------------------------------------------
                    labels = 4                     Coef.   Std.Err.    t    P>|t|   [0.025   0.975]
 --------------------------------------------------------------------------------------------------
-                                        const      2.2177   1.9982  1.1099 0.2671  -1.6987  6.1340
-                  average_temperature_celsius      1.7404   1.5607  1.1152 0.2648  -1.3185  4.7994
-                   comorbidity_mortality_rate     -3.6681   2.0639 -1.7772 0.0755  -7.7133  0.3772
-average_new_fully_vaccinated_per_day_per_1000     10.9841  19.2474  0.5707 0.5682 -26.7401 48.7083
-      average_new_vaccinated_per_day_per_1000    -12.5510  20.5587 -0.6105 0.5415 -52.8453 27.7433
-          average_new_tested_per_day_per_1000    -11.7558  13.6125 -0.8636 0.3878 -38.4359 14.9242
-                          diabetes_prevalence     -3.2518   2.4365 -1.3346 0.1820  -8.0272  1.5236
-                           gdp_per_capita_usd      1.8394   6.0794  0.3026 0.7622 -10.0761 13.7549
-                                      gdp_usd    -14.0092  14.7974 -0.9467 0.3438 -43.0117 14.9932
-                          human_capital_index     -0.2933   1.8937 -0.1549 0.8769  -4.0049  3.4184
-                                     latitude      0.4014   2.0658  0.1943 0.8459  -3.6474  4.4502
-                           population_density      2.7497   7.3950  0.3718 0.7100 -11.7443 17.2437
-                           smoking_prevalence      0.1899   1.9544  0.0972 0.9226  -3.6407  4.0206
-            total_cases_divided_by_population     -5.0878   3.3568 -1.5157 0.1296 -11.6670  1.4914
-           total_deaths_divided_by_population     -1.9597   3.0777 -0.6367 0.5243  -7.9919  4.0725
-                                   population     34.1033  23.2112  1.4693 0.1418 -11.3899 79.5965
+                                        const      2.4438   1.9695  1.2408 0.2147  -1.4164  6.3040
+                  average_temperature_celsius      1.0969   1.3839  0.7927 0.4280  -1.6154  3.8092
+                   comorbidity_mortality_rate     -2.3308   1.7027 -1.3689 0.1710  -5.6681  1.0065
+average_new_fully_vaccinated_per_day_per_1000     13.4837  13.5631  0.9941 0.3202 -13.0995 40.0668
+      average_new_vaccinated_per_day_per_1000    -14.1434  14.8176 -0.9545 0.3398 -43.1853 14.8985
+          average_new_tested_per_day_per_1000      0.8717   4.5573  0.1913 0.8483  -8.0605  9.8039
+                          diabetes_prevalence     -2.0017   2.0700 -0.9670 0.3335  -6.0589  2.0555
+                           gdp_per_capita_usd     -0.2764   3.3288 -0.0830 0.9338  -6.8007  6.2479
+                                      gdp_usd     -5.9622   5.6704 -1.0515 0.2930 -17.0759  5.1515
+                          human_capital_index     -0.7623   1.5536 -0.4907 0.6237  -3.8072  2.2826
+                                     latitude     -0.6589   1.7852 -0.3691 0.7120  -4.1578  2.8399
+                           population_density      4.5418   7.5469  0.6018 0.5473 -10.2498 19.3334
+                           smoking_prevalence     -0.6477   1.6060 -0.4033 0.6867  -3.7954  2.5000
+            total_cases_divided_by_population     -3.0079   2.3775 -1.2652 0.2058  -7.6677  1.6518
+           total_deaths_divided_by_population     -2.0930   2.3397 -0.8945 0.3710  -6.6787  2.4928
+                                   population     26.2518  19.1125  1.3735 0.1696 -11.2081 63.7116
 ==================================================================================================
 
