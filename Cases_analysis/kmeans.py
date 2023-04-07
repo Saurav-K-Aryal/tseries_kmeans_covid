@@ -17,7 +17,6 @@ import scipy.stats as stats
 # from sklearn.metrics import silhouette_score
 # import sys
 # sys.setrecursionlimit(2000000)
-
 MAX_CLUSTERS = 15
 N_INIT = MAX_CLUSTERS
 
@@ -204,6 +203,7 @@ deaths_df = deaths_df[deaths_df['t0'].notna()] # remvoe any NAs
 
 plt.show()
 finalize_cases(deaths_df)
+
 
 
 
